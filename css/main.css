@@ -36,9 +36,21 @@
         box-sizing: border-box;
 }
 
+html {
+        font-size: .9rem;
+}
+
 /*--------------------------------------------------------------
     4.0 - ELEMENTS
 -------------------------------------------------------------- */
+
+h1 {
+        font-size: 3.25rem;
+}
+       
+p {
+        font-size: 1rem;
+}
 
 
 
@@ -71,9 +83,13 @@ p {
         flex-flow: wrap;
 }
 
+.img-responsive {
+        max-width: 100%;
+}
+
 [class*='col-'] div {
         background-color: gray; 
-        height: 200px;
+        height: 100%;
 }
 
 [class*='col-'] {
@@ -139,6 +155,10 @@ p {
 
 
 @media screen and (min-width: 768px) {
+
+        html {
+                font-size: 25px;
+        }
 
         .wrapper {
                 width: 80%;
@@ -271,8 +291,21 @@ p {
   /*--------------------------------------------------------------
     6.0 - COMPONENTS
 -------------------------------------------------------------- */
+.row:last-child {
+        justify-content: center;
+}
 
 
+#bg-hand {
+        background: url(../img/hand.jpg) no-repeat center;
+        -webkit-background-size: cover;
+        -o-background-size: cover;
+        -ms-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        background-clip: content-box;
+
+}
 
 /* -----hero ----- */
 
