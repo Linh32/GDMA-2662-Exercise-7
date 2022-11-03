@@ -3,25 +3,21 @@
 /*--------------------------------------------------------------
     TABLE OF CONTENTS:
 ----------------------------------------------------------------
-1.0 - Settings: used with preprocessors and contain font, colors definitions, etc.
-2.0 - Tools: globally used mixins and functions. Use for preprocessor only.
-3.0 - Generic: reset and/or normalize styles, box-sizing definition, etc. 
-4.0 - Elements: styling for bare/generic HTML elements 
+
+1.0 - Generic: reset and/or normalize styles, box-sizing definition, etc. 
+        - Universal
+2.0 - Elements: styling for bare/generic HTML elements 
         - Typography: Headings, Paragraphs, Blockquotes, Anchors
-        - List
-        _ Anchor
-5.0 - Objects: class-based selectors which define undecorated design patterns, building blocks
+3.0 - Objects: class-based selectors which define undecorated design patterns, building blocks
         - Framework
-6.0 - Components: specific designed components
-        - Navigation
-        - Related artical 
-7.0 - Utilities: utilities and helper classes with ability to override anything which goes before in the triangle, eg. hide helper class
+4.0 - Components: specific designed components
+5.0 - Utilities: utilities and helper classes with ability to override anything which goes before in the triangle, eg. hide helper class
         - screen reader	    
 --------------------------------------------------------------*/
 
 
 /*--------------------------------------------------------------
-    3.0 - GENERTIC
+    1.0 - GENERTIC
 -------------------------------------------------------------- */
 
 /* ----- universal ----- */
@@ -41,8 +37,10 @@ html {
 }
 
 /*--------------------------------------------------------------
-    4.0 - ELEMENTS
+   2.0 - ELEMENTS
 -------------------------------------------------------------- */
+
+/* ----- Typography ----- */
 
 h1 {
         font-size: 3.25rem;
@@ -53,21 +51,8 @@ p {
 }
 
 
-
-
-
-/* ----- Typography ----- */
-
-p {
-
-}
-
-
-
-
-
 /*--------------------------------------------------------------
-    4.0 - OBJECTS
+    3.0 - OBJECTS
 -------------------------------------------------------------- */
 
 /* ----- Framework ----- */
@@ -90,10 +75,11 @@ p {
 [class*='col-'] div {
         background-color: gray; 
         height: 100%;
+        padding: 10px;
 }
 
 [class*='col-'] {
-        padding: 10px 5px;
+        padding: 5px;
 }
 
 
@@ -289,7 +275,7 @@ p {
 
 
   /*--------------------------------------------------------------
-    6.0 - COMPONENTS
+  4.0 - COMPONENTS
 -------------------------------------------------------------- */
 .row:last-child {
         justify-content: center;
@@ -307,32 +293,12 @@ p {
 
 }
 
-/* -----hero ----- */
-
-
-
-
-
-
-/* ----- nav ----- */
-
-
-
-/* ----- content ----- */
-
-
-
-
- 
-
-
-/* ----- footer ----- */
 
 
 
 
 /*--------------------------------------------------------------
-    7.0 - UTILITY
+   5.0 - UTILITY
 -------------------------------------------------------------- */
 
 /* ----- Screen reader ----- */
